@@ -1,12 +1,13 @@
 import React from 'react';
+import './App.css';
 // Importing a component from a component folder, so we can return it
-import Navbar from './components/Navbar';
+import Header from './components/Header/Header.js';
 
 // All we want to render to the screen
 export default function App() {
   return (
     <div>
-      <Navbar />
+      <Header />
     </div>
   );
 }
