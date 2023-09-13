@@ -24,7 +24,7 @@ export default function About() {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <Grid>
+        <Grid sx={{ mt:2 }}>
         <img src={wintersummer} width='60%' height='auto' style={{ borderRadius: '25px'}} className='me'/>
         </Grid>
       </Grid>
