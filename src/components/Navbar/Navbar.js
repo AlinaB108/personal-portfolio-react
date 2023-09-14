@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 import { AppBar, Box, Toolbar, Typography, Button, Grid } from '@mui/material';
 
 function NavBar() {

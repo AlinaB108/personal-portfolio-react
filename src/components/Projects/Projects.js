@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 import { Paper, Typography, Button, Grid, Link } from '@mui/material';
 import blobmania from "../../assets/images/blobmania.png";
 import blog from "../../assets/images/blog.png";

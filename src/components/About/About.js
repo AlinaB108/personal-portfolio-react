@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 import './About.css';
 import { Typography, Grid } from '@mui/material';
 import wintersummer from "../../assets/images/wintersummer.jpg";
