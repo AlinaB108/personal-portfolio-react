@@ -1,14 +1,14 @@
 import React from 'react';
 import '../../App.css';
 import './Projects.css';
-import { AppBar, Box, Toolbar, Paper, Typography, Button, Grid, Link } from '@mui/material';
+import { Paper, Typography, Button, Grid, Link } from '@mui/material';
 import blobmania from "../../assets/images/blobmania.png";
 import blog from "../../assets/images/blog.png";
 import sidekick from "../../assets/images/sidekick.png";
 
-export default function Projects() {
+function Projects() {
   return (
-    <Grid container justifyContent="center" alignItems="center" sx={{ p: 5 }}>
+    <Grid container justifyContent="center" alignItems="center" sx={{ p: 5, my:5 }}>
       <Grid item xs={12}>
         <Typography variant="h5" textAlign='center'>
           My Projects
@@ -114,3 +114,5 @@ export default function Projects() {
     </Grid>
   );
 }
+
+export default Projects;
