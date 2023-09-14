@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Typography, Grid, Link } from '@mui/material';
-import { Facebook, Instagram } from "@mui/icons-material";
+import { Facebook } from "@mui/icons-material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 

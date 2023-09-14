@@ -33,7 +33,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={blobmania} width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' alt="Blob Mania" />
+            <img src={blobmania} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center">
@@ -65,7 +65,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={blog} width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' alt="Blob Mania" />
+            <img src={blog} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center">
@@ -97,7 +97,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={sidekick} width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' alt="Blob Mania" />
+            <img src={sidekick} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center" >
