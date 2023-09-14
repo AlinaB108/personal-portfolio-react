@@ -29,6 +29,7 @@ npm i
 ```
 
 ## Usage
+![screenshot](./src/assets/images/site1.png)
 You can check my portfolio [here](https://65029af75232ef16b2563390--effulgent-moxie-36c53c.netlify.app/)
 
 ## License
