@@ -24,7 +24,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container component="main" maxWidth="xs" sx={{ mb:5 }}>
+    <Container component="main" maxWidth="xs" sx={{ mb:5 }} id="Contacts">
       <Paper elevation={3} style={{ padding: '20px' }}>
         <Typography variant="h5" align="center" sx={{ mb:2 }}>
           Contact Me
@@ -71,7 +71,7 @@ const ContactForm = () => {
           <Button
             type="submit"
             fullWidth
-            variant="contained"
+            variant="action"
             color="primary"
             style={{ marginTop: '20px' }}
           >

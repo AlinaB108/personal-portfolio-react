@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Footer() {
   return (
-    <Container maxWidth="100%" sx={{ p: 1 }}>
+    <Container maxWidth="100%" sx={{ p: 1 }} style={{ backgroundColor: '#bfadcc' }}>
       <Grid container sx={{ mt: 2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Grid item xs={12} sm={6} sx={{ textAlign: 'center' }}>
           <Typography variant="h6" color="text.secondary" gutterBottom>

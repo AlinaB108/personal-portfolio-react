@@ -1,6 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// Importing app.js
 import App from './App';
-// Telling virtual DOM to render the app component to the element with the id of 'root' (in this case <div></div>)
-ReactDOM.render(<App />, document.getElementById('root'));
+// import reportWebVitals from './reportWebVitals';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import theme from './styles/theme';
+
+ReactDOM.render(
+  <React.StrictMode>
+  <ThemeProvider theme = {theme}>
+  <CssBaseline/>
+      <App />
+  </ThemeProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+)
