@@ -29,7 +29,6 @@ function Footer() {
           {"Copyright © "}
           AlinaB
           {new Date().getFullYear()}
-          {"."}
         </Typography>
       </Box>
     </Container>

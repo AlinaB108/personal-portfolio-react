@@ -24,7 +24,12 @@ const ContactForm = () => {
   };
 
   return (
-    <Container component="main" maxWidth="xs" sx={{ mb:5 }} id="Contacts">
+    <Container component="main" maxWidth="xs" sx={{ mb:10 }} id="Contacts">
+      <Grid item xs={12} sx={{ m:4 }}>
+        <Typography variant="h4" textAlign='center'>
+          Contacts
+        </Typography>
+      </Grid>
       <Paper elevation={3} style={{ padding: '20px' }}>
         <Typography variant="h5" align="center" sx={{ mb:2 }}>
           Contact Me

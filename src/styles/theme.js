@@ -39,7 +39,18 @@ const theme = createTheme({
                           textShadow: '#fff -1.2px 0.3px',
                       }
                   }
-              }
+              },
+              {
+                props: { variant: 'linkicon2'},
+                style: {
+                    color: '#896790',
+
+                    margin: '1rem',
+                    "&:hover":{
+                        color: 'rgba(119, 86, 126, 1.0)',
+                    }
+                }
+            }
       ]
       },
       MuiButton: {

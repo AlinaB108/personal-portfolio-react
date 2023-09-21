@@ -21,6 +21,9 @@ function NavBar() {
             <Button component="a" href="#Contacts" color="inherit">
               Contacts
             </Button>
+            <Button component="a" href="#Resume" color="inherit">
+              Resume
+            </Button>
           </Box>
         </Grid>
       </Toolbar>

@@ -45,7 +45,42 @@ function Projects() {
           </Link>
         </Grid>
       </Paper>
+
       {/* Second Project */}
+      <Paper sx={{ my:3 }}>
+        <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
+          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
+            <Typography variant="h5" textAlign='center'>
+              Sidekick
+            </Typography>
+            <Typography variant="h6" textAlign='center' sx={{ p:2 }}>
+              A full-stack app which offers a landing site and a POS system for a restaurant. POS system includes client and server sides. The database is connected to the cloud.<br></br>
+              <em>Enter 1000 to test a manager role, 1001 to test an employee role. </em>
+            </Typography>
+            <Grid textAlign='center'>
+              <Button variant="skill">JavaScript</Button>
+              <Button variant="skill">React</Button>
+              <Button variant="skill">Graphql</Button>
+              <Button variant="skill">MongoDB</Button>
+              <Button variant="skill">JWT</Button>
+              <Button variant="skill">Material UI</Button>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
+            <img src={sidekick} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+          </Grid>
+        </Grid>
+        <Grid item xs={12} container justifyContent="center" >
+          <Link href="https://sidekick-pos-a138f104c04c.herokuapp.com/pos">
+            <Button variant="action" sx={{ my:2 }}>Deployed Site</Button>
+          </Link>
+          <Link href="https://github.com/AlinaB108/pos-system-5000">
+            <Button variant="action" sx={{ m:2 }}>GitHub</Button>
+          </Link>
+        </Grid>
+      </Paper>
+      
+      {/* Third Project */}
       <Paper sx={{ my:3 }}>
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
@@ -73,38 +108,6 @@ function Projects() {
             <Button variant="action" sx={{ my:2 }}>Deployed Site</Button>
           </Link>
           <Link href="https://github.com/AlinaB108/MVC-tech-blog">
-            <Button variant="action" sx={{ m:2 }}>GitHub</Button>
-          </Link>
-        </Grid>
-      </Paper>
-      {/* Third Project */}
-      <Paper sx={{ my:3 }}>
-        <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
-          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <Typography variant="h5" textAlign='center'>
-              Sidekick
-            </Typography>
-            <Typography variant="h6" textAlign='center' sx={{ p:2 }}>
-              A full-stack app which offers a landing site and a POS system for a restaurant. POS system includes client and server sides. The database is connected to the cloud. 
-            </Typography>
-            <Grid textAlign='center'>
-              <Button variant="skill">JavaScript</Button>
-              <Button variant="skill">React</Button>
-              <Button variant="skill">Graphql</Button>
-              <Button variant="skill">MongoDB</Button>
-              <Button variant="skill">JWT</Button>
-              <Button variant="skill">Material UI</Button>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={sidekick} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
-          </Grid>
-        </Grid>
-        <Grid item xs={12} container justifyContent="center" >
-          <Link href="https://sidekick-pos-a138f104c04c.herokuapp.com/pos">
-            <Button variant="action" sx={{ my:2 }}>Deployed Site</Button>
-          </Link>
-          <Link href="https://github.com/AlinaB108/pos-system-5000">
             <Button variant="action" sx={{ m:2 }}>GitHub</Button>
           </Link>
         </Grid>
