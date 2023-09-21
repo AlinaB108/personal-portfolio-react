@@ -80,6 +80,11 @@ const theme = createTheme({
         fontFamily: ['"Raleway"', 'sans-serif]'].join(','),
         fontSize: '1rem'
       },
+      h2: {
+        color: '#896790',
+        fontFamily: ['"Press Start 2P"', 'cursive'].join(','),
+        fontSize: '30px'
+      },
       h4: {
         color: '#896790',
         fontFamily: ['"Marcellus"', 'serif'].join(','),
