@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { AppBar, Box, Toolbar, Typography, Button, Grid, Drawer, List, ListItem, ListItemText, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import resume from '../../assets/alinabadillo-resume.docx';
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
