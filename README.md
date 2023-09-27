@@ -30,7 +30,7 @@ npm i
 
 ## Usage
 ![screenshot](./src/assets/images/site1.png)
-You can check my portfolio [here](https://65029af75232ef16b2563390--effulgent-moxie-36c53c.netlify.app/)
+You can check my portfolio [here](https://alinab-108.netlify.app/)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

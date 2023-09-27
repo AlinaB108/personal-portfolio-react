@@ -55,7 +55,7 @@ function NavBar() {
               <Button component="a" href="#Contacts" color="inherit">
                 Contacts
               </Button>
-              <Button component="a" href={resume} download color="inherit">
+              <Button component="a" href="#Resume" color="inherit">
                 Resume
               </Button>
             </Box>
