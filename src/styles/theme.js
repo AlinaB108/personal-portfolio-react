@@ -1,6 +1,5 @@
 // import { WrapText } from '@mui/icons-material';
 import {createTheme, responsiveFontSizes } from '@mui/material';
-// import { hover } from '@testing-library/user-event/dist/hover';
 
 const theme = createTheme({
   palette: {
@@ -62,8 +61,6 @@ const theme = createTheme({
                     color: '#fff',
                     width: '100%',
                     height: '2.5rem',
-                      // fontFamily: 'nunito',
-                      // fontWeight: 'bold',
                     "&:hover":{
                         background: 'rgba(119, 86, 126, 1.0)',
                         }
@@ -76,8 +73,6 @@ const theme = createTheme({
                     color: '#000',
                     height: '2.3rem',
                     margin: '2px',
-                      // fontFamily: 'nunito',
-                      // fontWeight: 'bold',
                     "&:hover":{
                         background: 'rgba(208, 153, 200, 1.0)',
                         }

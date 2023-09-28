@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button, TextField, Typography, Grid, Container, Paper } from '@mui/material';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -13,14 +14,17 @@ const ContactForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent('Contact Request');
-    const body = encodeURIComponent(
-      `Name: ${formData.name} Message: ${formData.message}`
-    );
-    const mailtoUrl = `mailto:alinachristabel108@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoUrl;
+
+    emailjs.sendForm('service_4zjzxzu', 'template_z02efpp', form.current, 'URrMI2cDKqVu6G4JK')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
 
   return (
@@ -34,29 +38,33 @@ const ContactForm = () => {
         <Typography variant="h5" align="center" sx={{ mb:2 }}>
           Contact Me
         </Typography>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
                 fullWidth
                 label="Name"
-                name="name"
+                name="user_name"
                 variant="outlined"
-                value={formData.name}
                 onChange={handleChange}
                 required
+                InputLabelProps={{
+                  style: { color: 'black', opacity: 1 }
+                }}
               />
             </Grid>
             <Grid item xs={12}>
-              <TextField
+              <TextField 
                 fullWidth
                 label="Email"
-                name="email"
+                name="user_email"
                 variant="outlined"
-                type="email"
-                value={formData.email}
                 onChange={handleChange}
+                type="email"
                 required
+                InputLabelProps={{
+                  style: { color: 'black', opacity: 1 }
+                }}
               />
             </Grid>
             <Grid item xs={12}>
@@ -65,11 +73,13 @@ const ContactForm = () => {
                 label="Message"
                 name="message"
                 variant="outlined"
+                onChange={handleChange}
                 multiline
                 rows={4}
-                value={formData.message}
-                onChange={handleChange}
                 required
+                InputLabelProps={{
+                  style: { color: 'black', opacity: 1 }
+                }}
               />
             </Grid>
           </Grid>
@@ -83,6 +93,7 @@ const ContactForm = () => {
             Send
           </Button>
         </form>
+
       </Paper>
     </Container>
   );
