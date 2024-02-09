@@ -3,6 +3,7 @@ import { Paper, Typography, Button, Grid, Link } from '@mui/material';
 import blobmania from "../../assets/images/blobmania.png";
 import blog from "../../assets/images/blog.png";
 import sidekick from "../../assets/images/sidekick.png";
+import weather from "../../assets/images/weather.png";
 
 function Projects() {
   return (
@@ -17,7 +18,7 @@ function Projects() {
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
             <Typography variant="h5" textAlign='center'>
-              Blobmania
+              Blobmania (group project)
             </Typography>
             <Typography variant="h6" textAlign='center' sx={{ p:2 }}>
               A full-stack web multiplayer 2D shooter game. Built with web sockets and Node.js. MySQL is used for login/logout option.
@@ -51,7 +52,7 @@ function Projects() {
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
             <Typography variant="h5" textAlign='center'>
-              Sidekick
+              Sidekick (group project)
             </Typography>
             <Typography variant="h6" textAlign='center' sx={{ p:2 }}>
               A full-stack app which offers a landing site and a POS system for a restaurant. POS system includes client and server sides. The database is connected to the cloud.<br></br>
@@ -108,6 +109,36 @@ function Projects() {
             <Button variant="action" sx={{ my:2 }}>Deployed Site</Button>
           </Link>
           <Link href="https://github.com/AlinaB108/MVC-tech-blog">
+            <Button variant="action" sx={{ m:2 }}>GitHub</Button>
+          </Link>
+        </Grid>
+      </Paper>
+
+      {/* Fourth Project */}
+      <Paper sx={{ my:3 }}>
+        <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
+          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
+            <Typography variant="h5" textAlign='center'>
+              Weather Dashboard
+            </Typography>
+            <Typography variant="h6" textAlign='center' sx={{ p:2 }}>
+            A weather app that shows the current weather (temperature, wind, humidity) for a selected city. It also provides weather forecasts for the next 5 days and saves search history locally.
+            </Typography>
+            <Grid textAlign='center'>
+              <Button variant="skill">JavaScript</Button>
+              <Button variant="skill">Bootstrap</Button>
+              <Button variant="skill">OpenWeather API</Button>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
+            <img src={weather} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+          </Grid>
+        </Grid>
+        <Grid item xs={12} container justifyContent="center">
+          <Link href="https://alinab108.github.io/weather-dashboard/">
+            <Button variant="action" sx={{ my:2 }}>Deployed Site</Button>
+          </Link>
+          <Link href="https://github.com/AlinaB108/weather-dashboard">
             <Button variant="action" sx={{ m:2 }}>GitHub</Button>
           </Link>
         </Grid>
