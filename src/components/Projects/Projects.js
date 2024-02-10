@@ -1,5 +1,6 @@
 import React from 'react';
 import { Paper, Typography, Button, Grid, Link } from '@mui/material';
+import irsdispute from "../../assets/images/irsdispute.png";
 import blobmania from "../../assets/images/blobmania.png";
 import blog from "../../assets/images/blog.png";
 import sidekick from "../../assets/images/sidekick.png";
@@ -13,7 +14,38 @@ function Projects() {
           My Projects
         </Typography>
       </Grid>
-      {/* First Project */}
+
+            {/* First Project */}
+            <Paper sx={{ my:3 }}>
+        <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
+          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
+            <Typography variant="h5" textAlign='center'>
+              IRS dispute (collaboration with Savannah Shifflet)
+            </Typography>
+            <Typography variant="h6" textAlign='center' sx={{ p:2 }}>
+              A real-life project for an IRS dispute resolution website. My involvement primarily centered around developing the 'How it Works' and 'Pricing' pages. 
+            </Typography>
+            <Grid textAlign='center'>
+              <Button variant="skill">JavaScript</Button>
+              <Button variant="skill">Node.js</Button>
+              <Button variant="skill">Bootstrap</Button>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
+            <img src={irsdispute} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+          </Grid>
+        </Grid>
+        <Grid item xs={12} container justifyContent="center">
+          <Link href="https://irsdispute.com/">
+            <Button variant="action" sx={{ my:2 }}>Deployed Site</Button>
+          </Link>
+          <Link href="https://github.com/Savannah-Shifflet/irs_dispute_updated">
+            <Button variant="action" sx={{ m:2 }}>GitHub</Button>
+          </Link>
+        </Grid>
+      </Paper>
+
+      {/* Second Project */}
       <Paper sx={{ my:3 }}>
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
@@ -47,7 +79,7 @@ function Projects() {
         </Grid>
       </Paper>
 
-      {/* Second Project */}
+      {/* Third Project */}
       <Paper sx={{ my:3 }}>
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
@@ -81,7 +113,7 @@ function Projects() {
         </Grid>
       </Paper>
       
-      {/* Third Project */}
+      {/* Fourth Project */}
       <Paper sx={{ my:3 }}>
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
@@ -114,7 +146,7 @@ function Projects() {
         </Grid>
       </Paper>
 
-      {/* Fourth Project */}
+      {/* Fifth Project */}
       <Paper sx={{ my:3 }}>
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
