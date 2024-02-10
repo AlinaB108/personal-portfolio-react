@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Button, TextField, Typography, Grid, Container, Paper } from '@mui/material';
+import { Button, TextField, Typography, Grid, Container, Paper, Snackbar } from '@mui/material';
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
@@ -8,6 +8,9 @@ const ContactForm = () => {
     email: '',
     message: '',
   });
+
+  const [message, setMessage] = useState('');
+  const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,10 +24,18 @@ const ContactForm = () => {
 
     emailjs.sendForm('service_4zjzxzu', 'template_z02efpp', form.current, 'URrMI2cDKqVu6G4JK')
       .then((result) => {
-          console.log(result.text);
+        setMessage('Your message has been sent successfully!');
+        setOpenSnackbar(true);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        setMessage('Oops! Something went wrong. Please try again later.');
+        setOpenSnackbar(true);
+        console.log(error.text);
       });
+  };
+
+  const handleCloseSnackbar = () => {
+    setOpenSnackbar(false);
   };
 
   return (
@@ -93,8 +104,17 @@ const ContactForm = () => {
             Send
           </Button>
         </form>
-
       </Paper>
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={3000}
+        onClose={handleCloseSnackbar}
+        message={message}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      />
     </Container>
   );
 };
