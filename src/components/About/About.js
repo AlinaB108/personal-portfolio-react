@@ -5,7 +5,7 @@ import wintersummer from "../../assets/images/wintersummer.jpg";
 import { useTypingEffect } from '../../components/typing-effect';
 
 function About() {
-  const text = useTypingEffect(">Greetings!", 400);
+  const text = useTypingEffect(">Greetings!", 350);
 
   return (
     <Grid id="About">

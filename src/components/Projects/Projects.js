@@ -15,8 +15,8 @@ function Projects() {
         </Typography>
       </Grid>
 
-            {/* First Project */}
-            <Paper sx={{ my:3 }}>
+      {/* First Project */}
+      <Paper sx={{ my:3 }}>
         <Grid container justifyContent="center" alignItems="center" spacing={2} sx={{ mt: 4 }}>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
             <Typography variant="h5" textAlign='center'>
@@ -32,7 +32,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={irsdispute} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+            <img src={irsdispute} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }}/>
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center">
@@ -66,7 +66,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={blobmania} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+            <img src={blobmania} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }}/>
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center">
@@ -100,7 +100,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={sidekick} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+            <img src={sidekick} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }}/>
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center" >
@@ -133,7 +133,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={blog} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+            <img src={blog} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }}/>
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center">
@@ -163,7 +163,7 @@ function Projects() {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center">
-            <img src={weather} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }} className='me' />
+            <img src={weather} alt="Screenshots of my app" width='80%' height='auto' style={{ borderRadius: '25px' }}/>
           </Grid>
         </Grid>
         <Grid item xs={12} container justifyContent="center">
@@ -173,6 +173,38 @@ function Projects() {
           <Link href="https://github.com/AlinaB108/weather-dashboard">
             <Button variant="action" sx={{ m:2 }}>GitHub</Button>
           </Link>
+        </Grid>
+      </Paper>
+
+      {/* Vanilla JS Projects */}
+      <Grid item xs={12} sx={{ mt: 5 }}>
+        <Typography variant="h4" textAlign='center'>
+          Vanilla JS Projects
+        </Typography>
+      </Grid>
+      <Paper sx={{ my: 3 }}>
+        <Grid container justifyContent="center" alignItems="center" sx={{ mt: 4 }}>
+          {/* First row */}
+          <Grid item xs={12} sm={4} md={4} sx={{ p: 2 }} container justifyContent="center">
+            <img src={weather} alt="1" width='100%' height='auto' style={{ borderRadius: '15px' }}/>
+          </Grid>
+          <Grid item xs={12} sm={4} md={4} sx={{ p: 2 }} container justifyContent="center">
+            <img src={weather} alt="1" width='100%' height='auto' style={{ borderRadius: '15px' }}/>
+          </Grid>
+          <Grid item xs={12} sm={4} md={4} sx={{ p: 2 }} container justifyContent="center">
+            <img src={weather} alt="1" width='100%' height='auto' style={{ borderRadius: '15px' }}/>
+          </Grid>
+
+          {/* Second row */}
+          <Grid item xs={12} sm={4} md={4} sx={{ p: 2 }} container justifyContent="center">
+            <img src={weather} alt="1" width='100%' height='auto' style={{ borderRadius: '15px' }}/>
+          </Grid>
+          <Grid item xs={12} sm={4} md={4} sx={{ p: 2 }} container justifyContent="center">
+            <img src={weather} alt="1" width='100%' height='auto' style={{ borderRadius: '15px' }}/>
+          </Grid>
+          <Grid item xs={12} sm={4} md={4} sx={{ p: 2 }} container justifyContent="center">
+            <img src={weather} alt="1" width='100%' height='auto' style={{ borderRadius: '15px' }}/>
+          </Grid>
         </Grid>
       </Paper>
     </Grid>
